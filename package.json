@@ -1,0 +1,33 @@
+{
+  "name": "css-framework",
+  "version": "0.0.1",
+  "description": "A revolutionary CSS framework based on taste, intuition and good design.",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "scss": "node-sass --watch scss -o css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/invictar/css-framework.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "author": "BossBele, Intisaar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/invictar/css-framework/issues"
+  },
+  "homepage": "https://github.com/invictar/css-framework#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
