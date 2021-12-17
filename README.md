@@ -7,6 +7,7 @@ This CSS framework is created to become a simple way to align items in a website
 ## [Principles](#principles):
 1. Class-ness
 A class-ness CSS framework is a CSS framework built upon class-less CSS. This means that the framework uses semantic HTML and do not rely on classes. However, classes are added when there is no semantic html to represent it. A **'class-ness'** (from class-necessary) CSS framework is one that uses classes when absolutely **necessary**.
+2. Fours
 
 ## [References](#references):
 The following are projects/works that are referenced and/or used to create this CSS Framework.
