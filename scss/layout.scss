@@ -1,0 +1,23 @@
+//
+// Base styles
+//
+
+.row {
+  @include flex;
+  @include flex-row;
+}
+
+.row-reverse {
+  @include flex;
+  @include flex-row-reverse;
+}
+
+.col {
+  @include flex;
+  @include flex-col;
+}
+
+.col-reverse {
+  @include flex;
+  @include flex-col-reverse;
+}
