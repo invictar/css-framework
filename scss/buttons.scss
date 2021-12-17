@@ -1,15 +1,16 @@
 //
-// Base styles
+// Button styles
 //
 
 button {
   display: inline-flex;
-  color: $light-color;
-  text-align: center;
-  vertical-align: middle;
-  background-color: $primary-color;
+  color: $light;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary;
   border: $border-width solid transparent;
   border-radius: $radius;
+  padding: $spacing-xs $spacing-s;
 
   // &:hover {
   //   color: $body-color;
@@ -25,4 +26,24 @@ button {
   //   pointer-events: none;
   //   opacity: $btn-disabled-opacity;
   // }
+}
+
+//
+// Alternate buttons
+//
+
+@each $theme, $color in $theme-colors {
+  button.#{$theme} {
+    @extend button;
+    background-color: $color;
+    border-color: $color;
+    color: color-contrast($color);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  button.outline-#{$color} {
+    @extend button;
+    // @include button-outline-variant($value);
+  }
 }
