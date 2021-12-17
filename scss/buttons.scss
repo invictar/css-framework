@@ -1,0 +1,28 @@
+//
+// Base styles
+//
+
+button {
+  display: inline-flex;
+  color: $light-color;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $primary-color;
+  border: $border-width solid transparent;
+  border-radius: $radius;
+
+  // &:hover {
+  //   color: $body-color;
+  //   text-decoration: if($link-hover-decoration == underline, none, null);
+  // }
+
+  // &:focus {
+  //   outline: 0;
+  //   box-shadow: $btn-focus-box-shadow;
+  // }
+
+  // &:disabled {
+  //   pointer-events: none;
+  //   opacity: $btn-disabled-opacity;
+  // }
+}
