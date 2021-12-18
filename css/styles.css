@@ -18,6 +18,30 @@
 .flex {
   flex: 1; }
 
+.primary {
+  color: lightseagreen; }
+
+.secondary {
+  color: gray; }
+
+.light {
+  color: white; }
+
+.dark {
+  color: black; }
+
+.primary {
+  background-color: lightseagreen; }
+
+.secondary {
+  background-color: gray; }
+
+.light {
+  background-color: white; }
+
+.dark {
+  background-color: black; }
+
 .row {
   display: flex;
   flex-direction: row; }
@@ -34,11 +58,12 @@
   display: flex;
   flex-direction: column-reverse; }
 
-button, button.primary, button.light, button.dark, button.outline-primary, button.outline-light, button.outline-dark {
-  display: inline-flex;
-  color: white;
+button, button.primary, button.secondary, button.light, button.dark, button.outline-primary, button.outline-secondary, button.outline-light, button.outline-dark {
+  display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+  cursor: pointer;
   background-color: lightseagreen;
   border: 1.618px solid transparent;
   border-radius: 6.472px;
@@ -47,6 +72,11 @@ button, button.primary, button.light, button.dark, button.outline-primary, butto
 button.primary {
   background-color: lightseagreen;
   border-color: lightseagreen;
+  color: black; }
+
+button.secondary {
+  background-color: gray;
+  border-color: gray;
   color: black; }
 
 button.light {
@@ -58,3 +88,34 @@ button.dark {
   background-color: black;
   border-color: black;
   color: white; }
+
+button.outline-primary {
+  background-color: rgba(32, 178, 170, 0.2);
+  border-color: lightseagreen;
+  color: lightseagreen; }
+
+button.outline-secondary {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-color: gray;
+  color: gray; }
+
+button.outline-light {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: white;
+  color: white; }
+
+button.outline-dark {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: black;
+  color: black; }
+
+a, a[href], a[href*='#'] {
+  display: flex;
+  padding: 0 6.472px; }
+
+a[href] {
+  color: lightseagreen; }
+
+a[href*='#'] {
+  color: gray;
+  text-decoration: none; }
