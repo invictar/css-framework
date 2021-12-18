@@ -3,10 +3,10 @@
 //
 
 button {
-  display: inline-flex;
+  @include flex;
+  @include center;
   color: $light;
-  align-items: center;
-  justify-content: center;
+  cursor: pointer;
   background-color: $primary;
   border: $border-width solid transparent;
   border-radius: $radius;
@@ -41,9 +41,11 @@ button {
   }
 }
 
-@each $color, $value in $theme-colors {
-  button.outline-#{$color} {
+@each $theme, $color in $theme-colors {
+  button.outline-#{$theme} {
     @extend button;
-    // @include button-outline-variant($value);
+    background-color: transparentize($color, 0.8);
+    border-color: $color;
+    color: $color;
   }
 }
