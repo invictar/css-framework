@@ -1,0 +1,17 @@
+//
+// Color styles
+//
+
+// Text styles
+@each $theme, $color in $theme-colors {
+  .#{$theme} {
+    color: $color;
+  }
+}
+
+// Background styles
+@each $theme, $color in $theme-colors {
+  .#{$theme} {
+    background-color: $color;
+  }
+}
