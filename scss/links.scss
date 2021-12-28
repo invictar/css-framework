@@ -5,21 +5,7 @@
 a {
   @include flex;
   padding: 0 $spacing-xs;
-
-  // &:hover {
-  //   color: $body-color;
-  //   text-decoration: if($link-hover-decoration == underline, none, null);
-  // }
-
-  // &:focus {
-  //   outline: 0;
-  //   box-shadow: $btn-focus-box-shadow;
-  // }
-
-  // &:disabled {
-  //   pointer-events: none;
-  //   opacity: $btn-disabled-opacity;
-  // }
+  cursor: pointer;
 }
 
 //
@@ -33,7 +19,7 @@ a[href] {
 }
 
 // Internal links
-a[href*='#'] {
+a[href*="#"] {
   @extend a;
   color: $secondary;
   text-decoration: none;
