@@ -1,0 +1,37 @@
+//
+// Badge styles
+//
+
+.badge {
+  @include flex-inline;
+  @include center;
+  color: $light;
+  background-color: $primary;
+  border: $border-width solid transparent;
+  border-radius: $radius;
+  padding: $spacing-xxs $spacing-xs;
+  font-size: $ratio * 0.48em;
+  font-weight: $fw-bold;
+}
+
+//
+// Alternate badges
+//
+
+// @each $theme, $color in $theme-colors {
+//   button.#{$theme} {
+//     @extend button;
+//     background-color: $color;
+//     border-color: $color;
+//     color: color-contrast($color);
+//   }
+// }
+
+// @each $theme, $color in $theme-colors {
+//   button.outline-#{$theme} {
+//     @extend button;
+//     background-color: transparentize($color, 0.8);
+//     border-color: $color;
+//     color: $color;
+//   }
+// }
