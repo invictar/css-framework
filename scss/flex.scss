@@ -6,6 +6,18 @@
   display: flex;
 }
 
+.flex {
+  @include flex;
+}
+
+@mixin flex-inline {
+  display: inline-flex;
+}
+
+.inline-flex {
+  @include flex-inline;
+}
+
 @mixin flex-direction($direction: row) {
   flex-direction: $direction;
 }
