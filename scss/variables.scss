@@ -28,6 +28,7 @@ $border-width: $ratio * 1px;
 $radius: $ratio * 4px;
 
 // Spacing
+$spacing-xxs: $ratio * 1px;
 $spacing-xs: $ratio * 4px;
 $spacing-s: $ratio * 8px;
 $spacing: $ratio * 16px;
@@ -41,3 +42,9 @@ $spacings: (
   "4": $spacing-l,
   "5": $spacing-xl,
 ) !default;
+
+// font weights
+$fw-light: 500;
+$fw-normal: 600;
+$fw-bold: 700;
+$fw-bolder: 900;
