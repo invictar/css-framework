@@ -1,0 +1,75 @@
+/* 
+ * MARGINS
+ * 
+ */
+@each $level, $value in $spacings {
+  .m-#{$level} {
+    margin: $value;
+  }
+}
+
+// margin-top
+@each $level, $value in $spacings {
+  .mt-#{$level} {
+    margin-top: $value;
+  }
+}
+
+// margin-bottom
+@each $level, $value in $spacings {
+  .mb-#{$level} {
+    margin-bottom: $value;
+  }
+}
+
+// margin-end
+@each $level, $value in $spacings {
+  .me-#{$level} {
+    margin-right: $value;
+  }
+}
+
+// margin-start
+@each $level, $value in $spacings {
+  .ms-#{$level} {
+    margin-left: $value;
+  }
+}
+
+/* 
+ * PADDINGS
+ * 
+ */
+@each $level, $value in $spacings {
+  .p-#{$level} {
+    padding: $value;
+  }
+}
+
+// padding-top
+@each $level, $value in $spacings {
+  .pt-#{$level} {
+    padding-top: $value;
+  }
+}
+
+// padding-bottom
+@each $level, $value in $spacings {
+  .pb-#{$level} {
+    padding-bottom: $value;
+  }
+}
+
+// padding-start
+@each $level, $value in $spacings {
+  .ps-#{$level} {
+    padding-left: $value;
+  }
+}
+
+// padding-end
+@each $level, $value in $spacings {
+  .pe-#{$level} {
+    padding-right: $value;
+  }
+}

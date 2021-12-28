@@ -27,7 +27,7 @@
     "url": "https://github.com/invictar/css-framework/issues"
   },
   "homepage": "https://github.com/invictar/css-framework#readme",
-  "dependencies": {
-    "node-sass": "^6.0.1"
+  "devDependencies": {
+    "node-sass": "^7.0.0"
   }
 }

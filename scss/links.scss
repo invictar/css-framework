@@ -1,0 +1,26 @@
+//
+// Link styles
+//
+
+a {
+  @include flex;
+  padding: 0 $spacing-xs;
+  cursor: pointer;
+}
+
+//
+// Alternate links
+//
+
+// links
+a[href] {
+  @extend a;
+  color: $primary;
+}
+
+// Internal links
+a[href*="#"] {
+  @extend a;
+  color: $secondary;
+  text-decoration: none;
+}

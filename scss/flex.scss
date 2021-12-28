@@ -1,0 +1,121 @@
+//
+// Flex styles
+//
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-direction($direction: row) {
+  flex-direction: $direction;
+}
+
+@mixin flex-row {
+  @include flex-direction();
+}
+
+@mixin flex-row-reverse {
+  @include flex-direction(row-reverse);
+}
+
+@mixin flex-col {
+  @include flex-direction(column);
+}
+
+@mixin flex-col-reverse {
+  @include flex-direction(column-reverse);
+}
+
+@mixin flex-position($align: center, $justify: center) {
+  align-items: $align;
+  justify-content: $justify;
+}
+
+// Center
+@mixin center {
+  @include flex-position();
+}
+
+@mixin center-center {
+  @include center;
+}
+
+@mixin center-start {
+  @include flex-position(center, flex-start);
+}
+
+@mixin center-end {
+  @include flex-position(center, flex-end);
+}
+
+@mixin center-around {
+  @include flex-position(center, space-around);
+}
+
+@mixin center-between {
+  @include flex-position(center, space-between);
+}
+
+@mixin center-evenly {
+  @include flex-position(center, space-evenly);
+}
+
+// Start
+@mixin start {
+  @include flex-position(flex-start, flex-start);
+}
+
+@mixin start-start {
+  @include start;
+}
+
+@mixin start-center {
+  @include flex-position(flex-start, center);
+}
+
+@mixin start-end {
+  @include flex-position(flex-start, flex-end);
+}
+
+@mixin start-around {
+  @include flex-position(flex-start, space-around);
+}
+
+@mixin start-between {
+  @include flex-position(flex-start, space-between);
+}
+
+@mixin start-evenly {
+  @include flex-position(flex-start, space-evenly);
+}
+
+// End
+@mixin end {
+  @include flex-position(flex-end, flex-end);
+}
+
+@mixin end-end {
+  @include end;
+}
+
+@mixin end-center {
+  @include flex-position(flex-end, center);
+}
+
+@mixin end-end {
+  @include flex-position(flex-end, flex-end);
+}
+
+@mixin end-around {
+  @include flex-position(flex-end, space-around);
+}
+
+@mixin end-between {
+  @include flex-position(flex-end, space-between);
+}
+
+@mixin end-evenly {
+  @include flex-position(flex-end, space-evenly);
+}
+
+//

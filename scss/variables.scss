@@ -1,0 +1,43 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Ratio
+$ratio: 1.618;
+
+// Colors
+$dark: black;
+$light: white;
+$primary: lightseagreen;
+$secondary: gray;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  // "success":    $success,
+  // "info":       $info,
+  // "warning":    $warning,
+  // "danger":     $danger,
+  "light": $light,
+  "dark": $dark,
+) !default;
+
+// Borders
+$border-width: $ratio * 1px;
+$radius: $ratio * 4px;
+
+// Spacing
+$spacing-xs: $ratio * 4px;
+$spacing-s: $ratio * 8px;
+$spacing: $ratio * 16px;
+$spacing-l: $ratio * 24px;
+$spacing-xl: $ratio * 32px;
+//
+$spacings: (
+  "1": $spacing-xs,
+  "2": $spacing-s,
+  "3": $spacing,
+  "4": $spacing-l,
+  "5": $spacing-xl,
+) !default;

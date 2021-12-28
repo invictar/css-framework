@@ -1,0 +1,51 @@
+//
+// Button styles
+//
+
+button {
+  @include flex;
+  @include center;
+  color: $light;
+  cursor: pointer;
+  background-color: $primary;
+  border: $border-width solid transparent;
+  border-radius: $radius;
+  padding: $spacing-xs $spacing-s;
+
+  // &:hover {
+  //   color: $body-color;
+  //   text-decoration: if($link-hover-decoration == underline, none, null);
+  // }
+
+  // &:focus {
+  //   outline: 0;
+  //   box-shadow: $btn-focus-box-shadow;
+  // }
+
+  // &:disabled {
+  //   pointer-events: none;
+  //   opacity: $btn-disabled-opacity;
+  // }
+}
+
+//
+// Alternate buttons
+//
+
+@each $theme, $color in $theme-colors {
+  button.#{$theme} {
+    @extend button;
+    background-color: $color;
+    border-color: $color;
+    color: color-contrast($color);
+  }
+}
+
+@each $theme, $color in $theme-colors {
+  button.outline-#{$theme} {
+    @extend button;
+    background-color: transparentize($color, 0.8);
+    border-color: $color;
+    color: $color;
+  }
+}
