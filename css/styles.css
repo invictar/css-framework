@@ -42,6 +42,12 @@
 .bg-dark {
   background-color: black; }
 
+.flex {
+  display: flex; }
+
+.inline-flex {
+  display: inline-flex; }
+
 .row {
   display: flex;
   flex-direction: row; }
@@ -216,6 +222,12 @@
 .pe-5 {
   padding-right: 51.776px; }
 
+.round {
+  border-radius: "50%"; }
+
+.pill {
+  border-radius: "50rem"; }
+
 button, button.primary, button.secondary, button.light, button.dark, button.outline-primary, button.outline-secondary, button.outline-light, button.outline-dark {
   display: flex;
   align-items: center;
@@ -266,6 +278,18 @@ button.outline-dark {
   background-color: rgba(0, 0, 0, 0.2);
   border-color: black;
   color: black; }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: lightseagreen;
+  border: 1.618px solid transparent;
+  border-radius: 6.472px;
+  padding: 1.618px 6.472px;
+  font-size: 0.77664em;
+  font-weight: 700; }
 
 a, a[href], a[href*="#"] {
   display: flex;
