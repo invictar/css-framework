@@ -1,0 +1,26 @@
+//
+// HR styles
+//
+
+hr {
+  @include flex;
+  margin: 0.5em auto;
+  border-width: 0;
+  border-color: "transparent";
+  height: 1px;
+  width: 100%;
+  background-color: $secondary;
+}
+
+//
+// Alternate dividers
+//
+
+// vertical divider
+hr[data-type="vertical"] {
+  @extend hr;
+  margin: auto 0.5em;
+  min-height: $spacing;
+  height: 100%;
+  width: 1px;
+}
