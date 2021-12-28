@@ -7,7 +7,11 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
+<body onload="renderMoustache()">
+  <div id="target">Loading...</div>
+  <script id="template" type="x-tmpl-mustache">
+    Hello {{ name }}!
+  </script>
   <section>
     <a href="#buttons">
       <h1>Buttons</h1>
@@ -32,7 +36,37 @@
     </p>
   </section>
   <section>
-    <a href="#buttons">
+    <a href="#badges">
+      <h1>Badges</h1>
+    </a>
+    <p class="flex">
+      <span class="badge">CSS</span>
+    </p>
+    <script id="template-badges" type="x-tmpl-mustache">
+      {{#badges}}
+      {{#headings}}
+        <h{{.}}>
+          Modern <button class="badge">CSS</button>
+        </h{{.}}>
+      {{/headings}}
+      {{/badges}}
+    </script>
+    <div id="badges"></div>
+    <p>
+      <button class="dark">Dark</button>
+    </p>
+    <p>
+      <button class="outline-primary">Outline</button>
+    </p>
+    <p class="bg-primary p-1">
+      <button class="outline-light">Outline Light</button>
+    </p>
+    <p>
+      <button class="outline-dark">Outline Dark</button>
+    </p>
+  </section>
+  <section>
+    <a href="#links">
       <h1>Links</h1>
     </a>
     <a>Default</a>
@@ -50,6 +84,9 @@
       <hr data-type="vertical" />
     </div>
   </section>
+
+  <script src="https://unpkg.com/mustache@latest"></script>
+  <script src="render.js"></script>
 </body>
 
 </html>
