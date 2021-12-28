@@ -11,7 +11,7 @@
 
 // Background styles
 @each $theme, $color in $theme-colors {
-  .#{$theme} {
+  .bg-#{$theme} {
     background-color: $color;
   }
 }
