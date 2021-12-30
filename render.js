@@ -1,10 +1,11 @@
-function renderMoustache() {
-  var template = document.getElementById('template').innerHTML;
-  var rendered = Mustache.render(template, { name: '' });
-  document.getElementById('target').innerHTML = rendered;
+const constants = { headings: [1, 2, 3, 4, 5, 6] };
 
-  const templateBadges = document.getElementById('template-badges').innerHTML;
-  const badges = {"badges":{"headings":[1, 2, 3, 4, 5, 6]}};
-  var html = Mustache.render(templateBadges, badges);
-  document.getElementById('badges').innerHTML = html;
+function renderMoustache() {
+  const templates = document.querySelectorAll('script[type="x-tmpl-mustache"]');
+  [...templates].forEach((element) => {
+    const { innerHTML: template } = element;
+    const reference = element.getAttribute("data-mustache");
+    const html = Mustache.render(template, constants);
+    const headings = (document.getElementById(reference).innerHTML = html);
+  });
 }
