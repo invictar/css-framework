@@ -8,10 +8,6 @@
 </head>
 
 <body onload="renderMoustache()">
-  <div id="target">Loading...</div>
-  <script id="template" type="x-tmpl-mustache">
-    Hello {{ name }}!
-  </script>
   <section>
     <a href="#buttons">
       <h1>Buttons</h1>
@@ -36,20 +32,31 @@
     </p>
   </section>
   <section>
+    <a href="#typography">
+      <h1>Typography</h1>
+    </a>
+    <script id="template-badges" type="x-tmpl-mustache" data-mustache='headings'>
+      {{#headings}}
+        <h{{.}}>
+          Heading {{.}}
+        </h{{.}}>
+      {{/headings}}
+    </script>
+    <div id="headings"></div>
+  </section>
+  <section>
     <a href="#badges">
       <h1>Badges</h1>
     </a>
     <p class="flex">
       <span class="badge">CSS</span>
     </p>
-    <script id="template-badges" type="x-tmpl-mustache">
-      {{#badges}}
+    <script type="x-tmpl-mustache" data-mustache='badges'>
       {{#headings}}
         <h{{.}}>
           Modern <button class="badge">CSS</button>
         </h{{.}}>
       {{/headings}}
-      {{/badges}}
     </script>
     <div id="badges"></div>
     <p>
